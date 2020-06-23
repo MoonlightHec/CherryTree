@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+
+    <test name="测试">
+        <classes>
+            <!--<class name="plm.LoginTester"/>-->
+            <!-- <class name="plm.SampleDevelopListQuery" /> -->
+            <!-- <class name="plm.PlmFabricApply" /> -->
+            <!--<class name="plm.PlmFabricEffectCon" />-->
+            <class name="plm.LoginTester"/>
+        </classes>
+    </test>
+
+    <!--支持浏览器的类型：IE、Chrome -->
+    <parameter name="browserType" value="Chrome"></parameter>
+    <!-- 各浏览器的驱动： IE： src/test/resources/IEDriverServer.exe Chrome： src/test/resources/chromedriver.exe -->
+    <parameter name="driverPath" value="src/test/resources/chromedriver.exe"></parameter>
+
+
+    <!-- 测试用例Excel路径 -->
+    <parameter name="excelPath" value="/soccermaster/soccermaster.xls"></parameter>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="listener.MoonlightListener"></listener>
+    </listeners>
+
+</suite> <!-- Suite -->

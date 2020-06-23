@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 这是所有页面的描述 -->
+<pages>
+
+	<page name="testcase.RegisterPage"><!--page name和测试用例的类名相同，方便clazz.getName就可以直接取到该page的name -->
+		<!-- 描述手机号 -->
+		<locator by="id" value="mobilephone" desc="手机号输入框"></locator>
+		<!-- 描述密码输入框 -->
+		<locator by="cssSelector" value="input[id='password']" desc="密码输入框"></locator>
+		<!-- 描述密码确认框 -->
+		<locator by="xpath" value=".//*[@id='pwdconfirm']" desc="密码确认框"></locator>
+		<!-- 描述注册按钮 -->
+		<locator by="id" value="signup-button" desc="注册按钮"></locator>
+		<!-- 描述重置按钮 -->
+		<locator by="id" value="reset" desc="重置按钮"></locator>
+		<locator by="className" value="tips" desc="提示信息"></locator>
+	</page>
+
+	<page name="登录页面">
+		<!-- 描述手机号 -->
+		<locator by="id" value="mobilephone" desc="手机号输入框"></locator>
+		<!-- 描述密码输入框 -->
+		<locator by="cssSelector" value="input[id='password']" desc="密码输入框"></locator>
+		<!-- 描述密码确认框 -->
+		<locator by="xpath" value=".//*[@id='pwdconfirm']" desc="密码确认框"></locator>
+		<!-- 描述注册按钮 -->
+		<locator by="id" value="signup-button" desc="登录按钮"></locator>
+		<locator by="className" value="tips" desc="提示信息"></locator>
+	</page>
+
+	<page name="soccermaster.QQRegister">
+		<!-- 描述昵称 -->
+		<locator by="id" value="nickname" desc="昵称输入框"></locator>
+		<!-- 描述密码 -->
+		<locator by="id" value="password" desc="密码输入框"></locator>
+		<!-- 描述手机号 -->
+		<locator by="id" value="phone" desc="手机号输入框">
+		</locator>
+		<!-- 描述验证码 -->
+		<locator by="id" value="code" desc="验证码输入框"></locator>
+		<locator by="xpath" value="/html/body/div[3]/div[2]/div[1]/form/div[3]/div[3]/div" desc="昵称提示语"></locator>
+		<locator by="xpath" value="/html/body/div[3]/div[2]/div[1]/form/div[4]/div[4]/div" desc="密码提示语"></locator>
+		<locator by="xpath" value="/html/body/div[3]/div[2]/div[1]/form/div[6]/div" desc="手机号提示语"></locator>
+		<locator by="xpath" value="/html/body/div[3]/div[2]/div[1]/form/div[8]/div[2]/div" desc="验证码提示语"></locator>
+		<locator by="id" value="get_acc" desc="登录按钮"></locator>
+	</page>
+	
+	
+	<page name="soccermaster.Masterofsoccer">
+		<locator by="xpath" value="/html/body/div/div[3]/button" desc="加入领豪礼按钮"></locator>
+		<locator by="xpath" value="/html/body/div/div[7]/div[1]/i" desc="关闭领豪礼二维码"></locator>
+		<locator by="id" value="ma_show_img" desc="如何使用兑换码链接"></locator>
+		<locator by="id" value="img_close_btn" desc="关闭如何领取弹框"></locator>
+		<locator by="className" value="wx-text" desc="关注公众号按钮"></locator>
+		<locator by="className" value="share-text" desc="分享给小伙伴按钮"></locator>
+		<locator by="cssSelector" value="img[src='./img/nba.png']" desc="篮球大师入口"></locator>
+		<locator by="id" value="partner" desc="商务合作按钮"></locator>
+<!-- 		<locator by="xpath" value="//*[@class='fix-wrapper']/div[2]/h1[2]" desc="一利"></locator> -->
+	</page>
+
+</pages>

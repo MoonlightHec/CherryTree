@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pages>
+    <page name="plm.LoginTester">
+        <!-- 用户名 -->
+        <locator by="name" value="username" desc="用户名输入框"></locator>
+        <!-- 密码 -->
+        <locator by="name" value="password" desc="密码输入框"></locator>
+        <!-- 登录按钮 -->
+        <locator by="name" value="dosubmit" desc="登录按钮"></locator>
+    </page>
+
+    <!-- 面料开发申请 -->
+    <page name="plm.PlmFabricApply">
+        <locator by="cssSelector" value="input[class='el-select__input is-small']" desc="设计师查询框"></locator>
+        <locator by="xpath" value="/html/body/div[3]/div[1]/div[1]/ul/li" desc="设计师查询下拉框"></locator>
+        <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[10]/div/button[1]/i"
+                 desc="查询按钮"></locator>
+    </page>
+
+    <!-- 面料效果确定 -->
+    <page name="plm.PlmFabricEffectCon"></page>
+    <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[9]/div/div/div/div[1]/input" desc="设计师输入框"></locator>
+    <locator by="xpath" value="/html/body/div[3]/div[1]/div[1]/ul/li" desc="设计师选项"></locator>
+    <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[10]/div/button[1]"
+             desc="查询按钮"></locator>
+    <locator by="cssSelector" value="span[class='el-pagination__total']" desc="本页数据量"></locator>
+
+
+    <!-- 样品开发列表 -->
+    <page name="plm.SampleDevelopListQuery">
+        <!-- 样品编码搜索输入框 -->
+        <locator by="cssSelector" value="input[placeholder='搜索样品编码（多个英文逗号分开）']" desc="样品编码搜索输入框"></locator>
+        <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[5]/div/button[1]"
+                 desc="查询按钮"></locator>
+
+        <!-- 高级搜索按钮 -->
+        <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[5]/div/span/button"
+                 desc="高级搜索按钮"></locator>
+        <!-- APM筛选输入框 -->
+        <locator by="cssSelector" value="input[class='el-select__input is-small']" desc="APM筛选输入框"></locator>
+        <!-- APM下拉列表 -->
+        <locator by="xPath" value="/html/body/div[17]/div[1]/div[1]/ul/li/span" desc="APM下拉列表"></locator>
+        <!-- 高级筛选确定按钮 -->
+        <locator by="xpath" value="//*[@id='el-popover-1106']/form/div[8]/div/div/div/button[1]"
+                 desc="高级筛选确定按钮"></locator>
+        <!-- 查询按钮 -->
+        <locator by="xpath" value="//*[@id='app']/div/div[2]/form/div[5]/div/button[1]"
+                 desc="查询按钮 "></locator>
+    </page>
+
+    <!--事业部分类配置-->
+    <page name="plm.BusinessClassConfiguration">
+        <!-- 用户名 -->
+        <locator by="name" value="username" desc="用户名输入框"></locator>
+        <!-- 密码 -->
+        <locator by="name" value="password" desc="密码输入框"></locator>
+        <!-- 登录按钮 -->
+        <locator by="name" value="dosubmit" desc="登录按钮"></locator>
+
+
+        <!--铁盒配置按钮-->
+        <locator by="xpath"
+                 value="//*[@id='app']/div/div[2]/div[4]/div[2]/table/tbody/tr[6]/td[3]/div/button/span"
+                 desc="铁盒配置按钮"></locator>
+        <locator by="xpath"
+                 value="/html/body/div[13]/div[2]/div[2]/div/section/form/div/div/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div/div/div[1]/div/div/div/input"
+                 desc="加色-单款色前三天累计销量"></locator>
+    </page>
+</pages>
